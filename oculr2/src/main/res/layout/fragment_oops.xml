@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff333333">
+
+	<LinearLayout
+	    android:id="@+id/ll_warning"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:orientation="vertical"
+	    android:background="#ff333333" >
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/oops"
+	        android:textColor="#ffa33bbb"
+	        android:textSize="64sp" />
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="240dp"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:text="@string/take_pic_first" />
+	
+	</LinearLayout>
+</FrameLayout>

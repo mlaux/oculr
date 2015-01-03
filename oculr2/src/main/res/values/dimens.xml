@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vid_thumb_width">320dp</dimen>
+    <dimen name="vid_thumb_height">240dp</dimen>
+    <dimen name="vid_sep_width">1dp</dimen>
+</resources>

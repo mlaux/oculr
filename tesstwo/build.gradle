@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+    sourceSets.main.jni.srcDirs = []
+    sourceSets.main.jniLibs.srcDirs = ['build/libs']
+
+
+    defaultConfig {
+        applicationId "com.googlecode.tesseract.android"
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+tasks.withType(Compile) {
+    compileTask -> compileTask.dependsOn ndkBuild
+}
+
+task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
+    ndkDir = project.plugins.findPlugin('com.android.library').getNdkFolder()
+    commandLine "$ndkDir/ndk-build",
+            'NDK_PROJECT_PATH=build',
+            'APP_BUILD_SCRIPT=src/main/jni/Android.mk', 'NDK_APPLICATION_MK=src/main/jni/Application.mk'
+}

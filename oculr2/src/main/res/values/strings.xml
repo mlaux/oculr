@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">oculr beta</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_oculr">oculr beta</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+	<string name="dlg_close">Close</string>
+	<string name="capture">Capture</string>
+	<string name="save_evernote">Save to Evernote</string>
+	<string name="login_for_results">Log in to Evernote to save oculr results</string>
+	<string name="take_pic_first">You need to take a picture before you can see any results.</string>
+	<string name="content_desc">image</string>
+	<string name="cancel">Cancel</string>
+	<string name="done">Done</string>
+	<string name="oops">Oops</string>
+	<string name="handwriting">Handwriting recognition</string>
+	<string name="calculating">Calculating&#8230;</string>
+	<string name="handwriting_warning">This is a beta feature and currently functions on simple equations with a few variables. For best results, scan dark writing on a light background.</string>
+	<string name="crop_howto">Drag the corners of the box and centre it around your equation, then move the scan line to pass through it.</string>
+	<string name="about_left">we are\n\n\n\n\n\ntwitter\nwebsite\ntumblr\nemail</string>
+	<string name="about_right">
+	    &lt;a href="http://twitter.com/mlaux95"&gt;@mlaux95&lt;/a&gt;&lt;br&gt;
+		&lt;a href="http://twitter.com/hackthevoid"&gt;@hackthevoid&lt;/a&gt;&lt;br&gt;
+		&lt;a href="http://twitter.com/aykhan96"&gt;@aykhan96&lt;/a&gt;&lt;br&gt;
+		&lt;a href="http://twitter.com/saradpamidi"&gt;@saradpamidi&lt;/a&gt;&lt;br&gt;
+		&lt;a href="http://twitter.com/trentwdb"&gt;@trentwdb&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+		&lt;a href="http://twitter.com/oculr"&gt;@oculr&lt;/a&gt;&lt;br&gt;
+		&lt;a href="http://oculrtech.com/"&gt;oculrtech.com&lt;/a&gt;&lt;br&gt;
+		&lt;a href="http://blog.oculr.me/"&gt;blog.oculr.me&lt;/a&gt;&lt;br&gt;
+		&lt;a href="mailto:hello@oculr.me"&gt;hello@oculr.me&lt;/a&gt;
+	</string>
+	<string name="ver_str">version 2.0.7b</string>
+</resources>

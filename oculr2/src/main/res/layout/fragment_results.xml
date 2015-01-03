@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_vids"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="0"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/v_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadow"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_cards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/lv_card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffeeeeee"
+            android:clipToPadding="false"
+            android:divider="#ffeeeeee"
+            android:dividerHeight="15dp"
+            android:padding="15dp" >
+        </ListView>
+        
+        <LinearLayout
+            android:id="@+id/ll_wolf_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+            
+            <TextView 
+                android:text="@string/calculating"
+                android:textColor="#ff333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        		android:textAppearance="?android:attr/textAppearanceLarge"
+        		android:textStyle="italic" />"
+
+            <ProgressBar
+                android:id="@+id/pb_wolf_loading"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="true" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

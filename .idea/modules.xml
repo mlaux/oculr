@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/evernote-sdk/evernote-sdk.iml" filepath="$PROJECT_DIR$/evernote-sdk/evernote-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oculr.iml" filepath="$PROJECT_DIR$/oculr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oculr2/oculr2.iml" filepath="$PROJECT_DIR$/oculr2/oculr2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tesstwo/tesstwo.iml" filepath="$PROJECT_DIR$/tesstwo/tesstwo.iml" />
+    </modules>
+  </component>
+</project>
+

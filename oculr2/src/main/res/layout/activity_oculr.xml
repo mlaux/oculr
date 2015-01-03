@@ -1,0 +1,46 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+	    android:background="#ff1f1f1f">
+        
+	    <com.oculrtech.oculr.ui.MenuSpinner
+	        android:layout_alignParentTop="true"
+	        android:id="@+id/sp_userinfo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+
+	    <ListView android:id="@+id/lv_drawer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/sp_userinfo"
+	        android:choiceMode="singleChoice"
+	        android:divider="#ffa33bbb"
+	        android:dividerHeight="2dp"
+       	    android:paddingLeft="8dp"
+      	    android:paddingRight="8dp"/>
+	    
+	    <CheckBox android:id="@+id/cb_handwriting"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginBottom="8dp"
+	        android:layout_alignParentBottom="true"
+	        android:text="@string/handwriting"
+	        android:visibility="gone" />
+	    
+	    
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
